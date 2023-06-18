@@ -2,14 +2,14 @@
 const nextConfig = {
   reactStrictMode: false,
   env: {
-    APP_URL: process.env.APP_URL,
-    API_URL: process.env.API_URL,
+    APP_URL: "https://effulgent-pasca-b08f2e.netlify.app",
+    API_URL: "https://chat-api2-epmf.onrender.com",
   },
   async rewrites() {
 		return [
 			{
 				source: '/uploads/:path*',
-				destination: `http://localhost:3000/uploads/:path*`,
+				destination: `https://chat-api2-epmf.onrender.com/uploads/:path*`,
 				
 			},
 		]
