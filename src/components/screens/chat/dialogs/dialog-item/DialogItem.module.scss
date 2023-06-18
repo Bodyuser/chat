@@ -1,0 +1,41 @@
+.item {
+	border-radius: 20px;
+	padding: 10px 20px;
+	gap: 30px;
+	cursor: pointer;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	max-width: max-content;
+	min-width: 200px;
+	position: relative;
+	> div:first-child {
+		> img {
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+		}
+	}
+	> div:last-child {
+		> .name {
+			font-size: 20px;
+			display: block;
+		}
+		> .message {
+			display: block;
+		}
+		> span:last-child {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			background-color: #f4c430;
+			border-radius: 50%;
+			width: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 20px;
+		}
+	}
+}

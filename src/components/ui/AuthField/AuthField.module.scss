@@ -1,0 +1,38 @@
+.field {
+	max-width: 300px;
+	border-radius: 20px;
+	.input {
+		position: relative;
+		background-color: #f4c430;
+		border-radius: 30px;
+		> input {
+			width: 100%;
+			padding: 13px 60px;
+			font-size: 16px;
+			color: #fff;
+			background-color: transparent;
+		}
+		> svg {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 26px;
+			left: 20px;
+			width: 24px;
+			height: 24px;
+			color: #fff;
+		}
+		> button {
+			position: absolute;
+			right: 20px;
+			background-color: transparent;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			> svg {
+				font-size: 22px;
+				color: #fff;
+			}
+		}
+	}
+}
